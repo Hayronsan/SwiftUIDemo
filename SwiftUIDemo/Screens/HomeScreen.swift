@@ -10,26 +10,16 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    @State private var half = false
+    @State private var dim = false
     
     var body: some View {
         
-        TabView {
-            
-            Image("photo1")
-                .resizable()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-            Image("photo2")
-                .resizable()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-            Image("photo3")
-                .resizable()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-            Image("photo4")
-                .resizable()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
+        VStack {
+            LottieView(animationFileName: "facebook", loopMode: .loop)
+                .frame(width: 200, height: 200)
+                
         }
-        .tabViewStyle(PageTabViewStyle())
         
         
     }
