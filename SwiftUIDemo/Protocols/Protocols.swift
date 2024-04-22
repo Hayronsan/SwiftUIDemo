@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol BindingProtocol {
+    func onReceived(value: String)
+}
