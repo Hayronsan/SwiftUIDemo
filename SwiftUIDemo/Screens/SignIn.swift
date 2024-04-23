@@ -10,7 +10,6 @@ import SwiftUI
 struct SignIn: View {
     @State  var user = ""
     @State  var password = ""
-    @State var isPresent = false
     
     var body: some View {
 
@@ -52,20 +51,16 @@ struct SignIn: View {
                 .background(.red)
                 .cornerRadius(20)
                 
+                .navigationBarTitle("Instagram", displayMode: .inline)
+                
                 Spacer()
                 
                 HStack {
                     
                     Text("Don't have an account?")
                         .foregroundColor(.blue)
-                    
-                    Button(action: {
-                        isPresent = true
-                    }, label: {
+                    NavigationLink(destination: SignUp(), label: {
                         Text("Sign Up")
-                            .foregroundColor(.blue)
-                    }).sheet(isPresented: $isPresent, content: {
-                        SignUp()
                     })
                         
                     
