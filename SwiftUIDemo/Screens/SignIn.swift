@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SignIn: View {
+    @EnvironmentObject var status: Status
     @State  var user = ""
     @State  var password = ""
     
@@ -38,6 +39,8 @@ struct SignIn: View {
                 
                 Button(action: {
                     
+                    UserDefaults.standard.set("pdp@gmail.com", forKey: "userid")
+                    status.listen()
                 }, label: {
                     HStack{
                         Spacer()

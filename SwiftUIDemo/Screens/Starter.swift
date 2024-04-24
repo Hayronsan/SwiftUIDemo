@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct Starter: View {
+    
+    @EnvironmentObject var status: Status
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            if self.status.userid != nil {
+                HomeScreen()
+            }else{
+                SignIn()
+            }
+            
+        }
+        .onAppear {
+            status.listen()
+        }
     }
 }
 

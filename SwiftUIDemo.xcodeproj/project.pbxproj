@@ -19,6 +19,8 @@
 		D51854A02BCB9E5B00CE2620 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518549F2BCB9E5B00CE2620 /* HomeScreen.swift */; };
 		D5B484B12BD7BE2A0039B012 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B484B02BD7BE2A0039B012 /* SignUp.swift */; };
 		D5B484B32BD7C4540039B012 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B484B22BD7C4540039B012 /* SignIn.swift */; };
+		D5B484B52BD8EBE40039B012 /* Starter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B484B42BD8EBE40039B012 /* Starter.swift */; };
+		D5B484B82BD8F0540039B012 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B484B72BD8F0540039B012 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D518549F2BCB9E5B00CE2620 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		D5B484B02BD7BE2A0039B012 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		D5B484B22BD7C4540039B012 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		D5B484B42BD8EBE40039B012 /* Starter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starter.swift; sourceTree = "<group>"; };
+		D5B484B72BD8F0540039B012 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		D518548F2BCB9DC600CE2620 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D5B484B62BD8F0430039B012 /* Classes */,
 				D50FA7C12BD65BC3005B2259 /* JsonFiles */,
 				D5023C4A2BD4F86A0009D61B /* Protocols */,
 				D518549E2BCB9E3E00CE2620 /* Screens */,
@@ -110,8 +115,17 @@
 				D518549F2BCB9E5B00CE2620 /* HomeScreen.swift */,
 				D5B484B22BD7C4540039B012 /* SignIn.swift */,
 				D5B484B02BD7BE2A0039B012 /* SignUp.swift */,
+				D5B484B42BD8EBE40039B012 /* Starter.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		D5B484B62BD8F0430039B012 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5B484B72BD8F0540039B012 /* Status.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,8 @@
 			files = (
 				D51854912BCB9DC600CE2620 /* SwiftUIDemoApp.swift in Sources */,
 				D5B484B32BD7C4540039B012 /* SignIn.swift in Sources */,
+				D5B484B52BD8EBE40039B012 /* Starter.swift in Sources */,
+				D5B484B82BD8F0540039B012 /* Status.swift in Sources */,
 				D5023C4C2BD4FAE30009D61B /* Protocols.swift in Sources */,
 				D51854A02BCB9E5B00CE2620 /* HomeScreen.swift in Sources */,
 				D50FA7C52BD65CC7005B2259 /* LottieView.swift in Sources */,
