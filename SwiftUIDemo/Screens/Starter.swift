@@ -14,6 +14,7 @@ struct Starter: View {
     var body: some View {
         
         VStack{
+            
             if self.status.userid != nil {
                 HomeScreen()
             }else{

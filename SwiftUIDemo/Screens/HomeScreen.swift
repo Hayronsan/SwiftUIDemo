@@ -22,9 +22,11 @@ struct HomeScreen: View {
                 }, label: {
                     Text("Logout")
                 })
+                
             }
             .navigationBarItems(leading: Image(systemName: "camera"), trailing: Image(systemName: "location"))
             .navigationBarTitle("Instagram", displayMode: .inline)
+            .foregroundColor(.red)
         }
         
         

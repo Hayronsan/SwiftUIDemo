@@ -10,7 +10,7 @@ import Combine
 
 class Status: ObservableObject {
     var didChange = PassthroughSubject<Status, Never>()
-    @Published var userid: String? {didSet{self.didChange.send(self)}}
+    @Published var userid: String? {didSet {self.didChange.send(self)}}
         
     func listen() {
         if let userid = UserDefaults.standard.string(forKey: "userid"){
